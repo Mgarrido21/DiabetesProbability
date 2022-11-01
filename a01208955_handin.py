@@ -107,7 +107,7 @@ df2 = pca.transform(df)
 
 df2 = pd.DataFrame(df2)
 df2.index = df.index
-df2.columns = ['PCA1','PCA2','PPCA3','PPCA4','PPCA5']
+df2.columns = ['PCA1','PCA2','PCA3','PCA4','PCA5']
 df2.head()
 
 #Scale Data
@@ -119,7 +119,7 @@ df_y = df[["DiabetesPF"]]
 
 df2.plot(
         kind='scatter',
-        x='PCA1',y='PCA2',
+        x='PCA3',y='PCA4',
         figsize=(16,8))
 
 kmeans = KMeans(n_clusters=4)
